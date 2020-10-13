@@ -161,7 +161,7 @@ The monitoring system was demonstrated in Figure 7. This was for walking. The fi
 
 <p>
     <img src="imgs/realtime_monitor.gif" alt>
-    <img src="imgs/summary.png" alt>
+    <img src="imgs/summary.PNG" alt>
     <Br>
     <em>Figure 7. Real time human activity monitoring</em>
 </p>
