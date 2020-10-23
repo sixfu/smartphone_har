@@ -53,7 +53,7 @@ The Android datasets only recorded the total acceleration which was the sum of t
 The time series data need to be converted into the format can be used to build models. The picture below was the total acceleration from the iPhone data for jogging.They were recorded in 3 dimensions. In this display, the horizontal direction is time, and the vertical is amplitude. In order to create the model building datasets, we needed to select the data in a window. For example, X1 here is one row in the training data, X2 is the next row. The number of samples included in X1 was defined as window length, and the shift from the beginning of X1 to the beginning of X2 was defined as the moving step. The window length and moving step for this "sliding window" scheme were needed to be optimized for both the iPhone and Android datasets.
 
 <p>
-    <img src="imgs/window_mbdata1.jpg" alt="Drawing" style="width: 500px;"/>
+    <img src="imgs/window_mbdata1.jpg" alt="Drawing" style="width: 300px;"/>
     <Br>
     <em>Figure 1. Create model building datasets from time series data</em>
 </p>
@@ -63,12 +63,12 @@ Next we need to match the iPhone and Android datasets. As one can see the Joggin
 After stretching (as in Figure 2(b)), the Android data matche well to the iPhone data in time (see Figure 1). Their amplitude could be matched by robostic scaler provided by the scikit learn library.
 
 <p>
-    <img src="imgs/androd_data_bf_stretch.jpg" alt="Drawing" style="width: 500px;"/>
+    <img src="imgs/androd_data_bf_stretch.jpg" alt="Drawing" style="width: 300px;"/>
     <Br>
     <em>Figure 2(a). Android phone jogging datasets before stretching</em>
 </p>
 <p>
-    <img src="imgs/androd_data_af_stretch.jpg" alt="Drawing" style="width: 500px;"/>
+    <img src="imgs/androd_data_af_stretch.jpg" alt="Drawing" style="width: 300px;"/>
     <Br>
     <em>Figure 2(b). Android phone jogging datasets after stretching</em>
 </p>
@@ -77,7 +77,7 @@ After stretching (as in Figure 2(b)), the Android data matche well to the iPhone
 ## Classification models comparison
 After getting the model building datasets, a few models had been built and their results on testing datasets were summarized in Figure 3.
 <p>
-    <img src="imgs/model_summary.jpg" alt="Drawing" style="width: 500px;"/>
+    <img src="imgs/model_summary.jpg" alt="Drawing" style="width: 300px;"/>
     <Br>
     <em>Figure 3. Model's accuracy comparison</em>
 </p>
