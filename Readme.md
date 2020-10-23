@@ -60,17 +60,17 @@ The time series data need to be converted into the format can be used to build m
 
 
 Next we need to match the iPhone and Android datasets. As one can see the Jogging data from Android data in Figure 2(a), it was very differnet from the iPhone data in Figure 1. More specifically, the Android data had more peaks than iPhone data in the same number of samples. This was because these two had different sampling frequency. We need to make sure the same window length stands for the same time peroid. In this case, the Android data was acquried at 20Hz and the iPhone data was aquired at 50Hz. Therefore the Android data needed to be stretched by 2.5 to match the iPhone data.
-After stretching (as in Figure 2(b)), the Android data matche well to the iPhone data in time. Their amplitude could be matched by robostic scaler provided by the scikit learn library.
+After stretching (as in Figure 2(b)), the Android data matche well to the iPhone data in time (see Figure 1). Their amplitude could be matched by robostic scaler provided by the scikit learn library.
 
 <p>
     <img src="imgs/androd_data_bf_stretch.jpg" alt="Drawing" style="width: 500px;"/>
     <Br>
-    <em>Figure 2(a). Create model building datasets from time series data</em>
+    <em>Figure 2(a). Android phone jogging datasets before stretching</em>
 </p>
 <p>
     <img src="imgs/androd_data_af_stretch.jpg" alt="Drawing" style="width: 500px;"/>
     <Br>
-    <em>Figure 2(b). Create model building datasets from time series data</em>
+    <em>Figure 2(b). Android phone jogging datasets after stretching</em>
 </p>
 
 
